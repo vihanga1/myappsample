@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style media="screen">
+      body {
+        font-family: sans-serif;
+        color: steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{% block heading %}{% endblock%}</h1>
+    {% block body %}
+    {% endblock%}
+  </body>
+</html>
